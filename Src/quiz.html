@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" >
+    
+</head>
+<body>
+            <h1 id ="appname">Web DevBeginner Quiz</h1>
+
+    <div class="menu" >
+        <div class="question">
+                     <h2 id="question "><span>Questions:</span> <span id="referenceqst">1/10</span></h2>          
+                    <h1 id="questionplace">which of these CSS properties allows</br> you to add a shadow to letters?</h1>
+        </div>             
+        <div class="answers">
+                  <table>
+                      <tr>
+                          <td><button id="btn1" onclick="calscore(document.getElementById('btn1').innerText)" class="answers">box-shadows</button></td>
+                          <td><button id="btn2" onclick="calscore(document.getElementById('btn2').innerText)"class="answers">text-shadow</button></td>
+                      </tr>
+                      <tr>
+                        <td><button id="btn3" onclick="calscore(document.getElementById('btn3').innerText)"class="answers">letter-shadow</button></td>
+                        <td><button id="btn4" onclick="calscore(document.getElementById('btn4').innerText)"class="answers">shadow</button></td>
+                    </tr>
+                  </table>
+        </div>                  
+    <div class="footmenu">
+        <p id="backtext"></p>
+      <div > <button id="nextbtn">next</button></div>
+        <p id="score"></p>
+    </div>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

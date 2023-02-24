@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:sans-serif;
+    background: linear(115deg,rgba(101,151,0.9),rgba(103,63,0,5)),
+    url(../img/01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100hv;
+    background-image: url(../assets/fond2.jpg);
+}
+img{
+    width: 5.5rem;
+    height: 5.2rem;
+    border: 50%;
+}
+.img{
+    position:fixed;
+}
+#appname{
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 3rem;
+    color:rgb(49,70,7);
+    background: yellow;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    border-radius: 20px;
+
+}
+.menu{
+    width: 600px;
+    margin: auto;
+    border:2px solid black;
+    border-radius: 2px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 10%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px white;
+}
+html{
+    --line-h: 40px;
+    --nth-lines-trunc:4;
+}
+
+.question{
+
+    text-align: center;
+     text-overflow:ellipsis;
+    line-height: var(--line-h);
+    max-height: calc(var(--line-h)*var(--nth-lines-trunc));
+    overflow: hidden;
+     width: 500px;
+     margin:auto ;
+     font-size: 10px;
+
+}
+
+h2{
+    color:orangered;
+  
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:blue;
+    
+}
+.answers{
+    width:100px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+
+
+}
+td button{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    border-color: blue;
+    background-color: aqua;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size:small;
+    text-align: center;
+    justify-content: center;
+}
+td button:hover{
+    box-shadow: 3px 3px 0px orangered;
+}
+
+#nextbtn{
+    width:100px;
+    height: 30px;
+    border-radius: 20px;
+    display:none;
+}
+#nextbtn:hover{
+     background-color: red;
+
+}
+@media all and (max-width:600px){
+    .menu{
+        width: 500px;
+    }
+    #appname{
+        width: 500px;
+        font-size: 30px;
+    
+    }
+}
+@media all and (max-width:500px){
+    .menu{
+        width:90%;
+    }
+    html{
+        --line-h: 20px;
+        --nth-lines-trunc:7;
+    }
+    
+    .question{
+    
+        text-align: center;
+         text-overflow:ellipsis;
+        line-height: var(--line-h);
+        max-height: calc(var(--line-h)*var(--nth-lines-trunc));
+        overflow: hidden;
+         width:90%;
+         margin:auto ;
+         font-size:8px;
+    
+    }
+
+    table{
+        display: flex;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        justify-content:center ;
+        align-items: center;
+      
+    }
+    td button{
+        border-radius: 10px;
+        width: 20%;
+        height: 40px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    #appname{
+        width: 100%;
+        font-size: 20px;
+    
+    }
+ 
+}
